@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Ejemplo de HTML5">
+  <meta name="keywords" content="HTML5, CSS3, JavaScript">
+  <meta http‐equiv="refresh" content="20;URL=./2PantillaBasica.htm">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divisones Sem&aacute;ticas</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/estiloBasico.css">
+  <style>
+    body {
+      margin: 0;
+    }
+
+    ul.topnav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #9a253a;
+    }
+
+    ul.topnav li {
+      float: left;
+    }
+
+    ul.topnav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    ul.topnav li a:hover:not(.active) {
+      background-color: #188077;
+    }
+
+
+    ul.topnav li.right {
+      float: right;
+    }
+
+    @media screen and (max-width: 600px) {
+
+      ul.topnav li.right,
+      ul.topnav li {
+        float: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="agrupar">
+
+    <header id="cabecera">
+      <h1>Este es mi blog</h1>
+    </header>
+
+    <nav id="menu">
+      <ul class="topnav">
+        <li><a href="#presentacion">principal</a></li>
+        <li><a href="#mapa">mapa</a></li>
+        <li><a href="#fotos">fotos</a></li>
+        <li><a href="#videos">videos</a></li>
+        <li><a href="#contacto">contacto</a></li>
+      </ul>
+    </nav>
+
+    <section id="seccion">
+      <article id="presentacion"><!--Primer articulo-->
+        <header>
+          <hgroup>
+            <h1>Hola soy daniel y este es mi cv</h1>
+            <h4>este es mi curriculum
+            </h4>
+          </hgroup>
+          <time datetime="2024-03-04" pubdate>
+            publicado 2024-03-04
+          </time>
+        </header>
+        Hola mi nombre es Daniel, y soy ingenerio en sistemas y este es mi video de presentacion
+        <figure>
+
+          <video controls width="340" height="260">
+            <source src="Videos/yo.mp4" type="video/mp4">
+            Tu navegador no admite el elemento de video.
+          </video>
+
+          <figcaption>
+            Video de presentacion(soy ese)
+          </figcaption>
+        </figure>
+
+        <footer>
+          <p>comentarios (999999999)</p>
+        </footer>
+      </article><!-- Fin Primer articulo-->
+
+      <article id="mapa"><!-- Segundo articulo-->
+        <header>
+          <hgroup>
+            <h1>Este soy yo</h1>
+            <h4>Subtítulo del mensaje dos</h4>
+          </hgroup>
+          <time datetime="2024-03-04" pubdate>
+            publicado 2024-03-04
+          </time>
+        </header>
+        Este es el texto de mi segundo mensaje
+        <figure>
+          <img id="imagen2" src="img/cara.jpg" style="width: 40%;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13358.32285708036!2d-97.0979503478377!3d18.855317568494257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c502aeb2d35fed%3A0xba5f3840b0862949!2sTecNM%20-%20Campus%20Orizaba!5e0!3m2!1ses-419!2smx!4v1709615373599!5m2!1ses-419!2smx"
+            width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <figcaption>
+            Esta es la imagen de mi cara
+          </figcaption>
+        </figure>
+        <footer>
+          <p>comentarios (0)</p>
+        </footer>
+      </article> <!-- Fin Segundo articulo-->
+
+      <article id="fotos"><!--tercer articulo-->
+        <header>
+          <hgroup>
+            <h1>Articulo solo de fotos</h1>
+            <h4>fotos favoritas
+            </h4>
+          </hgroup>
+          <time datetime="2024-03-04" pubdate>
+            publicado 2024-03-04
+          </time>
+        </header>
+        Aqui encontraras fotos varias
+        <figure>
+          <img src="img/chico.jpg">
+          <img src="img/r1.jpg">
+          <img src="img/r2.jpeg">
+          <img src="img/r3.jpeg">
+          <img src="img/f2.jpg">
+          <img src="img/f3.jpg">
+        </figure>
+
+        <footer>
+          <p>comentarios (2)</p>
+        </footer>
+      </article><!-- Fin tercer articulo-->
+
+      <article id="videos"><!--cuarto articulo-->
+        <header>
+          <hgroup>
+            <h1>Articulo solo de videos</h1>
+            <h4>videos favoritas
+            </h4>
+          </hgroup>
+          <time datetime="2024-03-04" pubdate>
+            publicado 2024-03-04
+          </time>
+        </header>
+        Aqui encontraras vidos varios
+        <figure>
+          <video controls width="340" height="260">
+            <source src="Videos/Gatitos  Maullando.mp4" type="video/mp4">
+            Tu navegador no admite el elemento de video.
+          </video>
+          <video controls width="340" height="260">
+            <source src="Videos/VID-20220916-WA0049.mp4" type="video/mp4">
+            Tu navegador no admite el elemento de video.
+          </video>
+
+          <video controls width="340" height="260">
+            <source src="Videos/VID_20211210_213338~2.mp4" type="video/mp4">
+            Tu navegador no admite el elemento de video.
+          </video>
+        </figure>
+
+        <footer>
+          <p>comentarios (200)</p>
+        </footer>
+      </article><!-- Fin cuarto articulo-->
+
+      <article id="contacto"><!--quinto articulo-->
+        <header>
+          <hgroup>
+            <h1>Articulo sobre contacto</h1>
+            <h4>mis redes de contacto
+            </h4>
+          </hgroup>
+          <time datetime="2024-03-04" pubdate>
+            publicado 2024-03-04
+          </time>
+        </header>
+        correo electronico: danielbenitezsalas@gmail.com
+        <br>
+        telefono: 2722154445
+
+        <footer>
+          <p>comentarios (200)</p>
+        </footer>
+      </article><!-- Fin cuarto articulo-->
+    </section> <!--Fin de section seccion-->
+
+    <aside id="columna"> <!-- aside -->
+      <blockquote>Este es mi facebook</blockquote>
+      <a href="https://www.facebook.com/profile.php?id=100081479632635">
+        <figure>
+          <img src="img/facebook.jpg" alt="facebook">
+        </figure>
+      </a>
+      <blockquote>Este es mi instagram</blockquote>
+      <a href="https://www.instagram.com/dbenitezzzzz/">
+        <figure>
+          <img src="img/instagram.jpg" alt="instagram">
+        </figure>
+      </a>
+    </aside> <!-- Fin aside -->
+
+    <footer id="pie">
+      Derechos Reservados &copy; 2010-2011
+      <address>
+        <a href="http://www.itorizaba.edu.mx">ITO</a>
+      </address>
+    </footer>
+
+  </div> <!--fin div agrupar-->
+
+</body>
+
+</html>
